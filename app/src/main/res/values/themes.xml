@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Bizznest" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/burnt</item>
+        <item name="colorPrimaryVariant">@color/ochre</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">@color/burnt</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.Bizznest" parent="Base.Theme.Bizznest" />
+</resources>

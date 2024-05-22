@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="burgundy">#39000F</color>
+    <color name="wine">#7B0A03</color>
+    <color name="burnt">#9A3015</color>
+    <color name="ochre">#CB4826</color>
+    <color name="yellow">#F7A83F</color>
+    <color name="pearl">#D1D1D1</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
