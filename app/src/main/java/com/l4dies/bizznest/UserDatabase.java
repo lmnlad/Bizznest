@@ -26,29 +26,17 @@ public class UserDatabase extends SQLiteOpenHelper{
         contentValues.put("email", email);
         contentValues.put("password", password);
         long result = MyDatabase.insert("users", null, contentValues);
-        if (result == -1) {
-            return false;
-        } else {
-            return true;
-        }
+        return result != -1;
     }
     public Boolean checkEmail(String email){
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         Cursor cursor = MyDatabase.rawQuery("Select * from users where email = ?", new String[]{email});
-        if(cursor.getCount() > 0) {
-            return true;
-        }else {
-            return false;
-        }
+        return cursor.getCount() > 0;
     }
     public Boolean checkEmailPassword(String email, String password){
         SQLiteDatabase MyDatabase = this.getWritableDatabase();
         Cursor cursor = MyDatabase.rawQuery("Select * from users where email = ? and password = ?", new String[]{email, password});
-        if (cursor.getCount() > 0) {
-            return true;
-        }else {
-            return false;
-        }
+        return cursor.getCount() > 0;
     }
 
 }

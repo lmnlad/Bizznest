@@ -1,11 +1,10 @@
 package com.l4dies.bizznest;
 
+import android.os.Bundle;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
-
-import android.os.Bundle;
-
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,5 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 tabLayout.selectTab(tabLayout.getTabAt(position));
             }
         });
+    }
+
+    public void switchToLoginTab() {
+        viewPager2.setCurrentItem(0);  // Assuming the LoginTabFragment is at position 0
     }
 }
